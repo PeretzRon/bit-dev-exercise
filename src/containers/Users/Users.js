@@ -5,9 +5,13 @@ import ButtonsControl from "../../components/ButtonsControl/ButtonsControl";
 import MoreInfo from "../../components/MoreInfo/MoreInfo";
 
 const Users = () => {
+
+    // contain the users data
     const [users, setUsers] = useState([]);
+    // open or close more info component
     const [showMoreInfo, setShowMoreInfo] = useState({status: false, user: null});
 
+    // fetch fake user from randomUser API and update state
     const fetchFakeUser = async () => {
         const data = await fetch('https://randomuser.me/api/');
         const jsonData = await data.json();
@@ -28,15 +32,19 @@ const Users = () => {
             }])
     }
 
+    // delete all users
     const deleteAllHandler = () => {
         setUsers([]);
+        setShowMoreInfo({status: false, user: null});
     }
 
+    // open more details of user
     const moreInfoButtonHandler = userId => {
         const user = users.find(elem => elem.id === userId);
-        setShowMoreInfo({status: true, user: user})
+        setShowMoreInfo({status: true, user: user});
     }
 
+    // close more info
     const closeMoreInfoHandler = () => {
         setShowMoreInfo({status: false, user: null});
     }
