@@ -1,0 +1,12 @@
+*:focus {
+    outline: none !important
+}
+
+.ButtonsControl {
+    margin: 20px;
+}
+
+.ButtonsControl button {
+    margin: 10px;
+
+}
