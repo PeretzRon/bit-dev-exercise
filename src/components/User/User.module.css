@@ -43,3 +43,14 @@
     align-self: center;
 
 }
+
+
+@media only screen and (max-width: 499px) {
+    .User {
+        width: 200px;
+
+    }
+
+}
+
+

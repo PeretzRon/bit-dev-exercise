@@ -11,7 +11,7 @@ const Header = () => {
                 <a href='https://ron-peretz.web.app/' rel="noopener noreferrer" target='_blank' ><FontAwesomeIcon className={classes.Icon} icon={icon.faUser}/>My Personal Site</a>
                 <a href='https://github.com/PeretzRon/bit-dev-exercise' rel="noopener noreferrer" target='_blank'><FontAwesomeIcon className={classes.Icon}   icon={icons.faGithub}My Personal Site/>GitHub</a>
             </div>
-            <h1 className={classes.Title}>Random Users</h1>
+            <h1 className={classes.Title}>Random <br/> Users</h1>
             <img className={classes.Logo} src={require('../../resources/bit.png')} alt='logo'/>
         </header>
     )

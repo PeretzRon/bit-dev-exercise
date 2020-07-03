@@ -40,9 +40,10 @@
     color: #fff;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .Title {
         font-size: 2.2rem;
+        transform: translateY(40px);
     }
 
     .Header {
@@ -51,5 +52,17 @@
 
     .Logo {
         margin-top: 10px;
+    }
+
+    .MyInfo {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media only screen and (max-width: 330px) {
+    .Title {
+        font-size: 1.5rem;
+        transform: translateY(40px);
     }
 }
